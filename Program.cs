@@ -5,8 +5,8 @@ Console.OutputEncoding = Encoding.UTF8;
 Console.InputEncoding = Encoding.UTF8;
 
 string dbPath = "music_library.db";
-string albumsCsv = "albums.csv";
-string songsCsv = "songs.csv";
+string albumsCsv = @"C:\Users\semen\OneDrive\Документы\Семестр2\Архитектура АСОИУ\MusicLibrary\albums.csv";
+string songsCsv = @"C:\\Users\\semen\\OneDrive\\Документы\\Семестр2\\Архитектура АСОИУ\\MusicLibrary\\songs.csv";
 
 var db = new DatabaseManager(dbPath);
 db.InitializeDatabase(albumsCsv, songsCsv);
